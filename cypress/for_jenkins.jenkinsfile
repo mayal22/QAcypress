@@ -1,0 +1,21 @@
+pipeline{
+
+    agent any
+
+    tools {nodejs "Nodejs"}
+
+    stages{
+        stage("install node js "){
+            steps{
+                bat "npm i"
+            }
+        }
+
+        stage("run cypress tests"){
+            steps{
+                bat "cd C:/QAcypress"
+                bat "npx cypress run"
+            }
+        }
+    }
+}
