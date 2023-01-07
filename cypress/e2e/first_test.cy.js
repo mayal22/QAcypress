@@ -22,7 +22,7 @@ describe("deep expect assertion",()=>{
     }
     let other_object = {
       "age":41,
-      "name":"Rahul bhujjj"
+      "name":"Rahul bhuj"
       
     }
     expect(one_object).to.be.deep.equal(other_object)
